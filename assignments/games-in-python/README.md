@@ -15,8 +15,8 @@ Use the provided starter code to choose a hidden word and prepare the game state
 Completed program should:
 
 - Randomly select a word from the provided `words` list.
-- Track the letters the player has guessed and set a maximum number of incorrect guesses.
-- Show the hidden word as underscores, revealing any letters the player has guessed correctly.
+- Initialize the guessed-letter collection and set the incorrect-guess limit to 6.
+- Display one underscore per letter in the hidden word, revealing letters as the player guesses them correctly.
 
 
 ### 🛠️ Implement the Guessing Game
@@ -28,5 +28,6 @@ Let the player guess letters, update the displayed word and remaining attempts, 
 Completed program should:
 
 - Prompt the player to enter a letter and check whether it appears in the hidden word.
-- Update and display the word's progress after each guess, along with the number of incorrect guesses remaining.
-- End when the player guesses the word or reaches the incorrect-guess limit, then display a win or loss message. If the player loses, reveal the hidden word.
+- Record each guess, count incorrect guesses toward the six-guess limit, and do not count a repeated guess more than once.
+- After each valid guess, display the word's progress and the number of incorrect guesses remaining.
+- End when the player guesses the word or reaches the limit, then display a win or loss message. If the player loses, reveal the hidden word.
