@@ -9,25 +9,25 @@ Learn how to define and use classes in Python to model real-world objects and be
 ### 🛠️ Define a Simple Class
 
 #### Description
-Create a class named `Car` that represents a car with attributes for make, model, and year. Add a method to display information about the car.
+Define a `Car` class that stores a car's make, model, and year, and provides a method to display those details.
 
 #### Requirements
 Completed program should:
 
-- Define a class `Car` with `make`, `model`, and `year` attributes
-- Include a method `display_info()` that prints the car's details
-- Create an instance of `Car` and call `display_info()`
+- Define a `Car` class whose initializer accepts `make`, `model`, and `year` and stores them as instance attributes.
+- Include a `display_info()` method that prints the car's make, model, and year.
+- Create a `Car` instance with sample values and call `display_info()` to display its details.
 
 
 ### 🛠️ Add Methods and Interactions
 
 #### Description
-Expand the `Car` class to include a method to update the car's mileage and another to display the current mileage.
+Extend the `Car` class with a mileage attribute and methods to update and display its current value.
 
 #### Requirements
 Completed program should:
 
-- Add a `mileage` attribute to the `Car` class (default 0)
-- Add a method `update_mileage(new_mileage)` to update the mileage
-- Add a method `display_mileage()` to print the current mileage
-- Demonstrate updating and displaying mileage for a `Car` instance
+- Initialize each car's `mileage` attribute to `0`.
+- Add an `update_mileage(new_mileage)` method that sets the car's mileage to the supplied value.
+- Add a `display_mileage()` method that prints the current mileage.
+- Demonstrate updating a car's mileage to `15000` and calling `display_mileage()` to show the updated value.
